@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, useColorScheme, Image, ScrollView } from 'react-native'
 import React from 'react'
 import Logo from '../assets/img/goldlogo2.png'
+import profil from '../assets/img/profil.jpg'
 import { Colors } from '../constants/Colors'
 import ThemedView from '../components/ThemedView'
 
@@ -21,7 +22,7 @@ const About = () => {
         </View>
     
         <View style={[styles.card, {width: '90%', height: '20%', alignItems: 'center', marginTop: 50}]}>
-            <Text style={[styles.title, {fontWeight: 'bold', fontSize: 40, marginBottom: 10, alignItems: 'center'}]}>
+            <Text style={[styles.title, {fontWeight: 'bold', fontSize: 50, marginBottom: 10, alignItems: 'center'}]}>
                 Hakkında
             </Text>
             <Text style={[styles.title, {color: '#c3ba9a',fontWeight: 'bold', fontSize: 20, textAlign: 'center'}]}>
@@ -30,7 +31,7 @@ const About = () => {
 
         </View>
 
-        <View style={[styles.card, {width: '90%', height: '28%', alignItems: 'center', marginTop: 50}]}>
+        <View style={[styles.card, {width: '90%', height: '25%', alignItems: 'center', marginTop: 50}]}>
             <Text style={[styles.title, {fontWeight: 'bold', fontSize: 35, marginBottom: 10, alignItems: 'center'}]}>
                 Neden CynoSura?
             </Text>
@@ -40,14 +41,17 @@ const About = () => {
 
         </View>
 
-        <View style={[styles.card, {height: 150, marginTop: 50, marginBottom: 80}]}>
+        <View style={[styles.card, {height: '10%', marginTop: 50, marginBottom: 80}]}>
             <Text style={[styles.title, {fontWeight: 'bold', fontSize: 25, marginBottom: 10, alignItems: 'center'}]}>
                 Developer Team
             </Text>
-            <Text style={[styles.title, {color: '#c3ba9a',  fontSize: 18}]}>
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10}}>
+                <Image source={profil} style={{ width: 45, height: 45, borderRadius: 30, marginBottom: 5 }} />
+                <Text style={[styles.title, {color: '#c3ba9a', fontSize: 17}]}>
                 Yiğit Celal Bektaş - Junior Developer
             </Text>
-        </View>
+            </View>
+            </View>
 
         
       

@@ -3,10 +3,10 @@ export const Colors = {
     warning: '#cc475a',
 
     dark: {
-        text: '#ffc107',
+        text: '#d8bb6f',
         title: '#000000',
         background: '#252231',
-        navBackground: '#ffd700',
+        navBackground: '#d8bb6f',
         iconColour: '#9591a5',
         iconColourFocused: '#fff',
         uiBackground: '#121616',
